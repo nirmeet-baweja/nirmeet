@@ -1,15 +1,15 @@
 import "./App.css";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <header>
+    <div class="min-h-screen">
       <Navbar />
       <Hero />
-      <h1>Nirmeet's portfolio</h1>
-      <img src="/logo192.png" alt="" />
-    </header>
+      <Footer />
+    </div>
   );
 }
 
