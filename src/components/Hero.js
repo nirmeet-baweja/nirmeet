@@ -15,13 +15,14 @@ export default function Hero() {
           />
         </div>
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-          <div className="text-center">
+          <div className=" flex flex-col text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
               Hi! I am Nirmeet a Web Developer And Product Designer
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               Want to create something interesting let's chat.
             </p>
+            <img src="/logo192.png" alt="" class="self-center" />
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#"
