@@ -4,13 +4,15 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
+import Timeline from "./components/Timeline";
 
 function App() {
   return (
-    <div class="min-h-screen">
+    <div>
       <Navbar />
       <Hero />
       <Projects />
+      <Timeline />
       <Contact />
       <Footer />
     </div>
