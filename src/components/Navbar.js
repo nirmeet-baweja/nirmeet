@@ -1,15 +1,12 @@
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { classNames } from "../utilities/helper";
 
 const navigation = [
   { name: "About", href: "#", current: true },
   { name: "Projects", href: "#projects", current: false },
   { name: "Contact", href: "#contact", current: false },
 ];
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
 
 export default function Navbar() {
   return (

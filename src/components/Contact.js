@@ -14,10 +14,7 @@
 */
 import { useState } from "react";
 import { Switch } from "@headlessui/react";
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
+import { classNames } from "../utilities/helper";
 
 export default function Contact() {
   const [agreed, setAgreed] = useState(false);
@@ -239,7 +236,10 @@ export default function Contact() {
             </div>
             <Switch.Label className="text-sm leading-6 text-gray-600">
               {`By selecting this, you agree to our `}
-              <a href="#privacy-policy" className="font-semibold text-indigo-600">
+              <a
+                href="#privacy-policy"
+                className="font-semibold text-indigo-600"
+              >
                 {`privacy policy`}
               </a>
               .
