@@ -192,9 +192,9 @@ export default function Contact() {
               </Switch>
             </div>
             <Switch.Label className="text-sm leading-6 text-gray-600">
-              By selecting this, you agree to our{" "}
-              <a href="#" className="font-semibold text-indigo-600">
-                privacy&nbsp;policy
+              {`By selecting this, you agree to our `}
+              <a href="#privacy-policy" className="font-semibold text-indigo-600">
+                {`privacy policy`}
               </a>
               .
             </Switch.Label>
