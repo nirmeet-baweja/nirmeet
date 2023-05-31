@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div class="flex justify-center">
+    <div class="block fixed bottom-0 w-screen z-50 bg-white flex justify-center">
       {/*Linkedin*/}
       <div class="m-8">
         <svg

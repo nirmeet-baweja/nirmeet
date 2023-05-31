@@ -13,7 +13,7 @@ function classNames(...classes) {
 
 export default function Navbar() {
   return (
-    <header className="absolute inset-x-0 top-0 z-50">
+    <header className="fixed inset-x-0 top-0 z-50">
       <Disclosure as="nav" className="bg-white">
         {({ open }) => (
           <>
