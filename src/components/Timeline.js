@@ -7,6 +7,12 @@ const career = [
     endDate: "06/Feb/2023",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula.",
+    company: {
+      name: "CYF",
+      href: "#",
+      logoUrl:
+        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    },
   },
   {
     jobTitle: "Software Engineer",
@@ -14,6 +20,12 @@ const career = [
     endDate: "06/Feb/2023",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula.",
+    company: {
+      name: "CYF",
+      href: "#",
+      logoUrl:
+        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    },
   },
   {
     jobTitle: "Software Engineer",
@@ -21,6 +33,12 @@ const career = [
     endDate: "06/Feb/2023",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula.",
+    company: {
+      name: "CYF",
+      href: "#",
+      logoUrl:
+        "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    },
   },
 ];
 
