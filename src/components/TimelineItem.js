@@ -24,14 +24,16 @@ export default function TimelineItem({ job }) {
             </p>
           </div>
           <div className="relative mt-8 flex items-center gap-x-4">
-            <img
-              src={job.company.logoUrl}
-              alt=""
-              className="h-10 w-10 rounded-full bg-gray-50"
-            />
+            {job.company.logoUrl && (
+              <img
+                src={job.company.logoUrl}
+                alt=""
+                className="h-7 bg-gray-50"
+              />
+            )}
             <div className="text-sm leading-6">
               <p className="font-semibold text-gray-900">
-                <a href={job.company.href}>
+                <a href={job.company.href} target="_blank">
                   <span className="absolute inset-0" />
                   {job.company.name}
                 </a>
@@ -39,7 +41,11 @@ export default function TimelineItem({ job }) {
             </div>
           </div>
           <p className="mb-6 text-gray-600 dark:text-neutral-200">
-            {job.description}
+            <ul className="list-disc list-outside">
+              {job.description.map((descriptionPoint) => (
+                <li>{descriptionPoint}</li>
+              ))}
+            </ul>
           </p>
           <div className="relative mt-8">
             <button
