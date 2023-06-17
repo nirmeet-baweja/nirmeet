@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/nirmeet/static/css/main.b5f160d1.css",
+    "main.js": "/nirmeet/static/js/main.f4dc28f6.js",
+    "static/js/787.79c73b06.chunk.js": "/nirmeet/static/js/787.79c73b06.chunk.js",
+    "index.html": "/nirmeet/index.html",
+    "main.b5f160d1.css.map": "/nirmeet/static/css/main.b5f160d1.css.map",
+    "main.f4dc28f6.js.map": "/nirmeet/static/js/main.f4dc28f6.js.map",
+    "787.79c73b06.chunk.js.map": "/nirmeet/static/js/787.79c73b06.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b5f160d1.css",
+    "static/js/main.f4dc28f6.js"
+  ]
+}
