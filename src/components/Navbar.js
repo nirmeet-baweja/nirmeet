@@ -34,7 +34,7 @@ export default function Navbar() {
                   <div className="flex flex-shrink-0 items-center">
                     <img
                       className="h-8 w-auto"
-                      src="/logo512.png"
+                      src={`${process.env.PUBLIC_URL}/logo512.png`}
                       alt="Your Company"
                     />
                   </div>
