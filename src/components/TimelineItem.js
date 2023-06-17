@@ -26,7 +26,7 @@ export default function TimelineItem({ job }) {
           <div className="relative mt-8 flex items-center gap-x-4">
             {job.company.logoUrl && (
               <img
-                src={job.company.logoUrl}
+                src={`${process.env.PUBLIC_URL}${job.company.logoUrl}`}
                 alt=""
                 className="h-7 bg-gray-50"
               />
