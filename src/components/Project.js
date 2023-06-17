@@ -6,7 +6,7 @@ export default function Project({ project }) {
     >
       <div className="relative justify-self-stretch self-center w-full">
         <img
-          src={project.imageUrl}
+          src={`${process.env.PUBLIC_URL}${project.imageUrl}`}
           alt={project.title}
           className="w-full rounded-t-lg"
         />
