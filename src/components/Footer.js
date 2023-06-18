@@ -1,8 +1,8 @@
 export default function Footer() {
   return (
-    <div class="block fixed bottom-0 w-screen z-50 bg-white flex justify-center">
+    <div className="block fixed bottom-0 w-screen z-50 bg-white flex justify-center">
       {/*Linkedin*/}
-      <div class="m-8">
+      <div className="m-8">
         <a
           href="https://www.linkedin.com/in/nirmeet-baweja"
           target="_blank"
@@ -10,7 +10,7 @@ export default function Footer() {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-7 w-7"
+            className="h-7 w-7"
             fill="currentColor"
             style={{ color: "#0077b5" }}
             viewBox="0 0 24 24"
@@ -20,7 +20,7 @@ export default function Footer() {
         </a>
       </div>
       {/*Github*/}
-      <div class="m-8">
+      <div className="m-8">
         <a
           href="https://github.com/nirmeet-baweja"
           target="_blank"
@@ -28,7 +28,7 @@ export default function Footer() {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-7 w-7"
+            className="h-7 w-7"
             fill="currentColor"
             style={{ color: "#333" }}
             viewBox="0 0 24 24"
