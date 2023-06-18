@@ -1,12 +1,13 @@
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { classNames } from "../utilities/helper";
+import { Link } from "react-router-dom";
 
 const navigation = [
-  { name: "About", href: "#", current: true },
-  { name: "Projects", href: "#projects", current: false },
-  { name: "Contact", href: "#contact", current: false },
-  { name: "CV", href: "#", current: false },
+  { name: "About", href: "/about", current: true },
+  { name: "Projects", href: "/projects", current: false },
+  { name: "Contact", href: "/contact", current: false },
+  { name: "CV", href: "/cv", current: false },
   { name: "Testimonials", href: "#", current: false },
   { name: "Blog", href: "#", current: false },
 ];
@@ -41,9 +42,9 @@ export default function Navbar() {
                   <div className="hidden sm:ml-6 sm:block">
                     <div className="flex space-x-4">
                       {navigation.map((item) => (
-                        <a
+                        <Link
                           key={item.name}
-                          href={item.href}
+                          to={item.href}
                           className={classNames(
                             item.current
                               ? "bg-indigo-600 text-white"
@@ -53,7 +54,7 @@ export default function Navbar() {
                           aria-current={item.current ? "page" : undefined}
                         >
                           {item.name}
-                        </a>
+                        </Link>
                       ))}
                     </div>
                   </div>
