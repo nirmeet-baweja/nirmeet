@@ -3,7 +3,11 @@ export default function Footer() {
     <div class="block fixed bottom-0 w-screen z-50 bg-white flex justify-center">
       {/*Linkedin*/}
       <div class="m-8">
-        <a href="https://www.linkedin.com/in/nirmeet-baweja" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/nirmeet-baweja"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-7 w-7"
@@ -17,7 +21,11 @@ export default function Footer() {
       </div>
       {/*Github*/}
       <div class="m-8">
-        <a href="https://github.com/nirmeet-baweja" target="_blank">
+        <a
+          href="https://github.com/nirmeet-baweja"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-7 w-7"

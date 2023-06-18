@@ -33,7 +33,11 @@ export default function TimelineItem({ job }) {
             )}
             <div className="text-sm leading-6">
               <p className="font-semibold text-gray-900">
-                <a href={job.company.href} target="_blank">
+                <a
+                  href={job.company.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <span className="absolute inset-0" />
                   {job.company.name}
                 </a>
