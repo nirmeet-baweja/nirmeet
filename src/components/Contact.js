@@ -130,6 +130,7 @@ export default function Contact() {
                 <select
                   id="country"
                   name="country"
+                  defaultValue={44}
                   className="block w-full rounded-l-lg border-0 px-4.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 text-ellipsis overflow-hidden"
                 >
                   <option value="358">{`Aland Islands +358`}</option>
@@ -185,7 +186,7 @@ export default function Contact() {
                   <option value="46">{`Sweden +46`}</option>
                   <option value="41">{`Switzerland +41`}</option>
                   <option value="380">{`Ukraine +380`}</option>
-                  <option value="44" selected>{`United Kingdom +44`}</option>
+                  <option value="44">{`United Kingdom +44`}</option>
                 </select>
               </div>
               <input

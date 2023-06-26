@@ -103,7 +103,7 @@ export default function Timeline() {
 
       <ol className="border-l-2 border-indigo-100 m-8">
         {career.map((job) => (
-          <TimelineItem job={job} />
+          <TimelineItem job={job} key={job.jobTitle} />
         ))}
       </ol>
     </div>
