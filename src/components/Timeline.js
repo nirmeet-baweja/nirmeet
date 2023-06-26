@@ -97,7 +97,7 @@ const career = [
 export default function Timeline() {
   return (
     <div className="m-auto lg:w-1/2">
-      <h3 className="mb-6 ml-3 text-2xl font-bold text-neutral-700 dark:text-neutral-300">
+      <h3 className="mb-6 ml-3 text-2xl font-bold text-neutral-700">
         Career Progression
       </h3>
 
