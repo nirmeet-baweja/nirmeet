@@ -1,5 +1,6 @@
 import "./App.css";
-import Contact from "./components/Contact";
+import ContactInfo from "./components/ContactInfo";
+// import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
@@ -13,7 +14,8 @@ function App() {
       <Hero />
       <Projects />
       <Timeline />
-      <Contact />
+      {/* <Contact /> */}
+      <ContactInfo />
       <Footer />
     </div>
   );
