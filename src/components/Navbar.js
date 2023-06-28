@@ -5,10 +5,10 @@ import { classNames } from "../utilities/helper";
 const navigation = [
   { name: "About", href: "#", current: true },
   { name: "Projects", href: "#projects", current: false },
+  { name: "Career Progression", href: "#career", current: false },
   { name: "Contact", href: "#contact", current: false },
-  { name: "CV", href: "#", current: false },
-  { name: "Testimonials", href: "#", current: false },
-  { name: "Blog", href: "#", current: false },
+  // { name: "Testimonials", href: "#", current: false },
+  // { name: "Blog", href: "#", current: false },
 ];
 
 export default function Navbar() {
