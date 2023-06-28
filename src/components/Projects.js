@@ -38,7 +38,7 @@ const projects = [
     title: "Coding Session Sign-up",
     href: "https://github.com/nirmeet-baweja/capgemini-homework-club-backend",
     description:
-      "An application to provide a common platform between Capgemini Volunteers and Code Your Future (CYF) students to sign-up for coding sessions. This app has three types of users - Admin, Volunteer and Student. Admins have the responsibility to set-up the coding sessions and assign the topics for the session. Volunteers join the session to provide their expertise and help students with the doubts they are facing. Students sign-up to sessions to get help from volunteers with their ongoing projects, doubts or classes.",
+      "An application to provide a common platform between Capgemini Volunteers and Code Your Future (CYF) trainees to sign-up for coding sessions. This app has three types of users - Admin, Volunteer and Student. Admins have the responsibility to set-up the coding sessions and assign the topics for the session. Volunteers join the session to provide their expertise and help students with the doubts they are facing. Students sign-up to sessions to get help from volunteers with their ongoing projects, doubts or classes.",
     imageUrl: "/assets/projects/homework-club.png",
   },
   // More projects...
