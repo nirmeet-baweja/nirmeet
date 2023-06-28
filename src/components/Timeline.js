@@ -96,16 +96,22 @@ const career = [
 
 export default function Timeline() {
   return (
-    <div className="m-auto lg:w-1/2">
-      <h3 className="mb-6 ml-3 text-2xl font-bold text-neutral-700">
-        Career Progression
-      </h3>
-
-      <ol className="border-l-2 border-indigo-100 m-8">
-        {career.map((job) => (
-          <TimelineItem job={job} key={job.jobTitle} />
-        ))}
-      </ol>
+    <div
+      className="m-auto py-24 sm:py-32 lg:w-1/2 max-w-7xl px-6 lg:px-8"
+      id="career"
+    >
+      <div className="mx-auto max-w-2xl lg:mx-0">
+        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          Career Progression
+        </h2>
+      </div>
+      <div className="border-t border-gray-200 mx-auto mt-10">
+        <ol className="border-l-2 border-indigo-100 m-8">
+          {career.map((job) => (
+            <TimelineItem job={job} key={job.jobTitle} />
+          ))}
+        </ol>
+      </div>
     </div>
   );
 }
