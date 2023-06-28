@@ -22,7 +22,11 @@ export default function Hero() {
             <p className="mt-6 text-lg leading-8 text-gray-600">
               Want to create something interesting let's chat.
             </p>
-            <img src="/logo192.png" alt="" className="self-center" />
+            <img
+              src={`${process.env.PUBLIC_URL}/logo192.png`}
+              alt=""
+              className="self-center"
+            />
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#contact"
