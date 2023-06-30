@@ -1,3 +1,4 @@
+import Container from "./Container";
 import Project from "./Project";
 
 const projects = [
@@ -46,19 +47,12 @@ const projects = [
 
 export default function Projects() {
   return (
-    <div className="bg-white py-24 sm:py-32" id="projects">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Projects
-          </h2>
-        </div>
-        <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 md:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-          {projects.map((project) => {
-            return <Project project={project} key={project.title} />;
-          })}
-        </div>
+    <Container id="projects" heading="Projects">
+      <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 md:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        {projects.map((project) => {
+          return <Project project={project} key={project.title} />;
+        })}
       </div>
-    </div>
+    </Container>
   );
 }
