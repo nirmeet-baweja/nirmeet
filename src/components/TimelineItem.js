@@ -16,14 +16,14 @@ export default function TimelineItem({ job }) {
             />
           </svg>
         </div>
-        <div className="mb-10 ml-6 block max-w-md rounded-lg bg-neutral-50 p-6 shadow-md shadow-black/5">
-          <div className="mb-4 flex justify-between items-end">
+        <div className="mb-10 ml-6 block max-w-2xl rounded-lg bg-neutral-50 p-6 shadow-md shadow-black/5">
+          <div className="mb-4 flex flex-col items-start justify-between sm:flex-row sm:items-end">
             <p className="text-lg text-indigo-700">{job.jobTitle}</p>
             <p className="text-sm text-indigo-600">
               {`${job.startDate} - ${job.endDate}`}
             </p>
           </div>
-          <div className="relative mt-8 flex items-center gap-x-4">
+          <div className="relative mt-8 mb-4 flex flex-col-reverse items-start sm:flex-row sm:items-center gap-x-4">
             {job.company.logoUrl && (
               <img
                 src={`${process.env.PUBLIC_URL}${job.company.logoUrl}`}
@@ -50,23 +50,6 @@ export default function TimelineItem({ job }) {
                 <li key={index}>{descriptionPoint}</li>
               ))}
             </ul>
-          </div>
-          <div className="relative mt-8">
-            <button
-              type="button"
-              className="inline-block rounded bg-indigo px-4 pb-[5px] pt-[6px] text-xs font-medium uppercase leading-normal text-gray-600 shadow-[0_4px_9px_-4px_#54b4d3] transition duration-150 ease-in-out hover:bg-indigo-600 hover:text-white hover:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.3),0_4px_18px_0_rgba(84,180,211,0.2)] focus:bg-indigo-600 focus:text-white focus:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.3),0_4px_18px_0_rgba(84,180,211,0.2)] focus:outline-none focus:ring-0 active:bg-indigo-700 active:text-white active:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.3),0_4px_18px_0_rgba(84,180,211,0.2)]"
-              data-te-ripple-init
-              data-te-ripple-color="light"
-            >
-              Preview
-            </button>
-            <button
-              type="button"
-              className="inline-block rounded border-2 border-indigo px-4 pb-[3px] pt-[4px] text-xs font-medium uppercase leading-normal text-gray-600 transition duration-150 ease-in-out hover:border-indigo-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-indigo-600 focus:border-indigo-600 focus:text-indigo-600 focus:outline-none focus:ring-0 active:border-indigo-700 active:text-indigo-700"
-              data-te-ripple-init
-            >
-              See demo
-            </button>
           </div>
         </div>
       </div>
