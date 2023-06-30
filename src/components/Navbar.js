@@ -1,9 +1,10 @@
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { classNames } from "../utilities/helper";
+import { useLocalStorage } from "../utilities/useLocalStorage";
 
 const navigation = [
-  { name: "About", href: "#", current: true },
+  { name: "About", href: "#about", current: true },
   { name: "Projects", href: "#projects", current: false },
   { name: "Career Progression", href: "#career", current: false },
   { name: "Contact", href: "#contact", current: false },
@@ -12,6 +13,11 @@ const navigation = [
 ];
 
 export default function Navbar() {
+  const [activeSection, setActiveSection] = useLocalStorage(
+    "activeSection",
+    "About"
+  );
+
   return (
     <header className="fixed inset-x-0 top-0 z-50">
       <Disclosure as="nav" className="bg-white">
@@ -44,8 +50,9 @@ export default function Navbar() {
                         <a
                           key={item.name}
                           href={item.href}
+                          onClick={() => setActiveSection(item.name)}
                           className={classNames(
-                            item.current
+                            activeSection === item.name
                               ? "bg-indigo-600 text-white"
                               : "text-gray-600 hover:bg-indigo-500 hover:text-white",
                             "rounded-md px-3 py-2 text-sm font-medium"
