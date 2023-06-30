@@ -11,7 +11,7 @@ const navigation = [
   // { name: "Blog", href: "#", current: false },
 ];
 
-export default function Navbar({activeSection, setActiveSection}) {
+export default function Navbar({ activeSection, setActiveSection }) {
   return (
     <header className="fixed inset-x-0 top-0 z-50">
       <Disclosure as="nav" className="bg-white">
@@ -32,11 +32,13 @@ export default function Navbar({activeSection, setActiveSection}) {
                 </div>
                 <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                   <div className="flex flex-shrink-0 items-center">
-                    <img
-                      className="h-8 w-auto"
-                      src={`${process.env.PUBLIC_URL}/logo512.png`}
-                      alt="Your Company"
-                    />
+                    <a href="/">
+                      <img
+                        className="h-8 w-auto"
+                        src={`${process.env.PUBLIC_URL}/logo512.png`}
+                        alt="Your Company"
+                      />
+                    </a>
                   </div>
                   <div className="hidden sm:ml-6 sm:block">
                     <div className="flex space-x-4">
