@@ -1,3 +1,7 @@
+import IconLink from "./IconLink";
+import GithubLogo from "./GithubLogo";
+import GlobeLogo from "./GlobeLogo";
+
 export default function Project({ project }) {
   return (
     <article
@@ -20,21 +24,20 @@ export default function Project({ project }) {
           {project.description}
         </p>
       </div>
-      <div className="relative p-8">
-        <button
-          type="button"
-          className="inline-block rounded bg-indigo px-4 pb-[5px] pt-[6px] text-xs font-medium uppercase leading-normal text-gray-600 shadow-[0_4px_9px_-4px_#54b4d3] transition duration-150 ease-in-out hover:bg-indigo-600 hover:text-white hover:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.3),0_4px_18px_0_rgba(84,180,211,0.2)] focus:bg-indigo-600 focus:text-white focus:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.3),0_4px_18px_0_rgba(84,180,211,0.2)] focus:outline-none focus:ring-0 active:bg-indigo-700 active:text-white active:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.3),0_4px_18px_0_rgba(84,180,211,0.2)]"
-          data-te-ripple-init
-          data-te-ripple-color="light"
-        >
-          Preview
+      <div className="flex relative p-8 w-full justify-around">
+        <button className="flex justify-center items-center bg-white hover:bg-indigo-400 text-gray-800 hover:text-white font-semibold py-2 px-4 border border-indigo-600 rounded shadow">
+          <IconLink url={project.githubUrl} icon={GithubLogo} />
+          <span>Github</span>
         </button>
         <button
-          type="button"
-          className="inline-block rounded border-2 border-indigo px-4 pb-[3px] pt-[4px] text-xs font-medium uppercase leading-normal text-gray-600 transition duration-150 ease-in-out hover:border-indigo-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-indigo-600 focus:border-indigo-600 focus:text-indigo-600 focus:outline-none focus:ring-0 active:border-indigo-700 active:text-indigo-700"
-          data-te-ripple-init
+          className={`flex justify-center items-center font-semibold py-2 px-4 border border-indigo-600 rounded shadow ${
+            project.deployUrl
+              ? " bg-white hover:bg-indigo-400 text-gray-800 hover:text-white"
+              : " bg-gray-100 text-gray-500 opacity-50 cursor-not-allowed"
+          }`}
         >
-          See demo
+          <IconLink url={project.deployUrl} icon={GlobeLogo} />
+          <span>Website</span>
         </button>
       </div>
     </article>
