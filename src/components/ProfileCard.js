@@ -1,7 +1,8 @@
 import React from "react";
+import IconLink from "./IconLink";
 
 const ProfileCard = ({ profile }) => {
-  const { name, username, title, link } = profile;
+  const { name, username, title, url, icon } = profile;
 
   return (
     <div className="bg-white flex flex-col items-center justify-center p-4 shadow-lg rounded-2xl w-64 self-center m-4">
@@ -20,7 +21,9 @@ const ProfileCard = ({ profile }) => {
       <div className="text-gray-700 mt-4">
         <p>{title}</p>
       </div>
-      <div className="flex w-full mt-8 justify-center">{link()}</div>
+      <div className="flex w-full mt-8 justify-center">
+        <IconLink url={url} icon={icon} />
+      </div>
     </div>
   );
 };
