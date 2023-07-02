@@ -1,6 +1,6 @@
 export default function TimelineItem({ job }) {
   return (
-    <li>
+    <li className="hover:scale-110 hover:transition-all ease-in-out delay-50 duration-100 motion-reduce:hover:transform-none">
       <div className="flex-start md:flex">
         <div className="-ml-[13px] flex h-[25px] w-[25px] items-center justify-center rounded-full bg-indigo-100 text-indigo-700">
           <svg
