@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/nirmeet/static/css/main.28f62e88.css",
-    "main.js": "/nirmeet/static/js/main.860f06a8.js",
+    "main.css": "/nirmeet/static/css/main.817bce79.css",
+    "main.js": "/nirmeet/static/js/main.fcb078ce.js",
     "static/js/787.79c73b06.chunk.js": "/nirmeet/static/js/787.79c73b06.chunk.js",
     "index.html": "/nirmeet/index.html",
-    "main.28f62e88.css.map": "/nirmeet/static/css/main.28f62e88.css.map",
-    "main.860f06a8.js.map": "/nirmeet/static/js/main.860f06a8.js.map",
+    "main.817bce79.css.map": "/nirmeet/static/css/main.817bce79.css.map",
+    "main.fcb078ce.js.map": "/nirmeet/static/js/main.fcb078ce.js.map",
     "787.79c73b06.chunk.js.map": "/nirmeet/static/js/787.79c73b06.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.28f62e88.css",
-    "static/js/main.860f06a8.js"
+    "static/css/main.817bce79.css",
+    "static/js/main.fcb078ce.js"
   ]
 }
