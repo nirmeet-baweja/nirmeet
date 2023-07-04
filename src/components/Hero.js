@@ -6,7 +6,7 @@ export default function Hero({ setActiveSection }) {
       <div className="mx-auto max-w-2xl">
         <div className=" flex flex-col text-center">
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-            Hi! I am Nirmeet a Web Developer And Product Designer
+            Hi! I am Nirmeet a Software Developer And Product Designer
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-600">
             Want to create something interesting let's chat.
