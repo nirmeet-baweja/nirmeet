@@ -1,5 +1,13 @@
 [
   {
+    "id": 6,
+    "title": "Family Guy Quiz - Next.Js",
+    "githubUrl": "https://github.com/nirmeet-baweja/family-guy-nextjs",
+    "deployUrl": "https://family-guy-nextjs-ezg0xpiue-nirmeet-baweja.vercel.app/",
+    "description": "A family guy quiz app to practice Next.Js server side rendering concepts.",
+    "imageUrl": "/assets/projects/family-guy-nextjs.png"
+  },
+  {
     "id": 1,
     "title": "Say Your Pain",
     "githubUrl": "https://github.com/nirmeet-baweja/say-your-pain",
