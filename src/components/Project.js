@@ -25,7 +25,13 @@ export default function Project({ project }) {
         </p>
       </div>
       <div className="flex relative p-8 w-full justify-around">
-        <button className="flex justify-center items-center bg-white hover:bg-indigo-400 text-gray-800 hover:text-white font-semibold py-2 px-4 border border-indigo-600 rounded shadow">
+        <button
+          className={`flex justify-center items-center font-semibold py-2 px-4 border border-indigo-600 rounded shadow ${
+            project.githubUrl
+              ? " bg-white hover:bg-indigo-400 text-gray-800 hover:text-white"
+              : " bg-gray-100 text-gray-500 opacity-50 cursor-not-allowed"
+          }`}
+        >
           <IconLink url={project.githubUrl} icon={GithubLogo} />
           <span>Github</span>
         </button>

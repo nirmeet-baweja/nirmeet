@@ -1,5 +1,13 @@
 [
   {
+    "id": 7,
+    "title": "Eligibility Assessment Tool - In Collaboration with Code Your Future and Rainbird",
+    "githubUrl": "",
+    "deployUrl": "https://rainbird.ai/case-study/a-candidate-assessment-tool-that-saves-900-hours-of-manual-reviews/",
+    "description": "An automated candidate assessment tool that saves CodeYourFuture 900 hours' worth of manual applicant reviews for each course while preserving applicant privacy and promoting fairness and transparency.",
+    "imageUrl": "/assets/projects/eligibility-assessment-tool.webp"
+  },
+  {
     "id": 6,
     "title": "Family Guy Quiz - Next.Js",
     "githubUrl": "https://github.com/nirmeet-baweja/family-guy-nextjs",
