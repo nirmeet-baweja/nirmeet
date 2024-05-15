@@ -1,8 +1,21 @@
 [
   {
+    "jobTitle": "Full Stack Engineer",
+    "startDate": "Sep/2023",
+    "endDate": "Current",
+    "description": [
+      "Developing a code library aimed at expediting development, resolving bugs, and driving feature innovation. This initiative will save considerable developer hours, leading to a more efficient and streamlined coding experience."
+    ],
+    "company": {
+      "name": "Miller Hare Limited",
+      "href": "hhttps://www.millerhare.com/services/index.htm",
+      "logoUrl": "/assets/millerhare-logo.png"
+    }
+  },
+  {
     "jobTitle": "Full Stack Instructor",
     "startDate": "May/2022",
-    "endDate": "Current",
+    "endDate": "Sep/2023",
     "description": [
       "Deliver engaging Full Stack development training programs to students of varying technical backgrounds and skill levels.",
       "Develop a variety of training materials, including presentations, lectures, hands-on exercises, and other learning resources.",
